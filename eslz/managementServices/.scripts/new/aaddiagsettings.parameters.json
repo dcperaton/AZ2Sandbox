@@ -1,0 +1,74 @@
+{
+  "parameters": {
+    "logs":{
+      "value":[
+        {
+          "category": "AuditLogs",
+          "enabled": true,
+          "retentionPolicy": { "enabled": false, "days": 0 }
+        },
+        {
+          "category": "SignInLogs",
+          "enabled": true,
+          "retentionPolicy": { "enabled": false, "days": 0 }
+        },
+        {
+          "category": "ServicePrincipalSignInLogs",
+          "enabled": true,
+          "retentionPolicy": { "enabled": false, "days": 0 }
+        },
+        {
+          "category": "ManagedIdentitySignInLogs",
+          "enabled": true,
+          "retentionPolicy": { "enabled": false, "days": 0 }
+        },
+        {
+          "category": "ADFSSignInLogs",
+          "enabled": true,
+          "retentionPolicy": { "enabled": false, "days": 0 }
+        },
+        {
+          "category": "RiskyUsers",
+          "enabled": true,
+          "retentionPolicy": { "enabled": false, "days": 0 }
+        },
+        {
+          "category": "UserRiskEvents",
+          "enabled": true,
+          "retentionPolicy": { "enabled": false, "days": 0 }
+        },
+        {
+          "category": "RiskyServicePrincipals",
+          "enabled": true,
+          "retentionPolicy": { "enabled": false, "days": 0 }
+        },
+        {
+          "category": "ServicePrincipalRiskEvents",
+          "enabled": true,
+          "retentionPolicy": { "enabled": false, "days": 0 }
+        },
+        {
+          "category": "NonInteractiveUserSignInLogs",
+          "enabled": true,
+          "retentionPolicy": { "enabled": false, "days": 0 }
+        }
+      ]
+    },
+    "metrics":{
+      "value":[]
+    },
+    "workspaceId":{
+      "value":"<Log Analytics Workspace resourceId>"
+    },
+    "storageAccountId":{
+      "value":"<Storage Account resourceId>"
+    },
+    "eventHubAuthorizationRuleId":{
+      "value":"<Eventhub Namespace Authorization Rule ID>"
+    },
+    "eventHubName":{
+      "value":"<Eventhub Name>"
+    }
+  }
+}
+

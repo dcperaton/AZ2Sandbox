@@ -5,7 +5,7 @@
         "hubNetworkSecurityGroups": {
             "value": [
                 {
-                    "name": "nsg-css-prod-usva-abh",
+                    "name": "nsg-ccs-sand-usva-abh",
                     "securityRules": [
                         {
                             "name": "AllowHttpsInbound",
@@ -133,7 +133,7 @@
             ]
         },
         "hubVnetName": {
-            "value": "vnet-ccs-prod-usva-conn"
+            "value": "vnet-ccs-sand-usva-conn"
         },
         "hubVnetAddressPrefixes": {
             "value": [
@@ -159,7 +159,7 @@
                     "addressPrefix": "10.30.0.192/26"
                 },
                 {
-                    "name": "snet-ccs-prod-usva-app",
+                    "name": "snet-ccs-sand-usva-app",
                     "addressPrefix": "10.30.1.0/26",
                     "serviceEndpoints": [
                         {
@@ -173,7 +173,7 @@
                     "privateLinkServiceNetworkPolicies": "Enabled"
                 },
                 {
-                    "name": "snet-ccs-prod-usva-data",
+                    "name": "snet-ccs-sand-usva-data",
                     "addressPrefix": "10.30.1.64/26",
                     "serviceEndpoints": [
                         {
@@ -187,7 +187,7 @@
                     "privateLinkServiceNetworkPolicies": "Enabled"
                 },
                 {
-                    "name": "snet-ccs-prod-usva-mgmt",
+                    "name": "snet-ccs-sand-usva-mgmt",
                     "addressPrefix": "10.30.1.128/26",
                     "serviceEndpoints": [
                         {
@@ -201,7 +201,7 @@
                     "privateLinkServiceNetworkPolicies": "Enabled"
                 },
                 {
-                    "name": "snet-ccs-prod-usva-web",
+                    "name": "snet-ccs-sand-usva-web",
                     "addressPrefix": "10.30.1.192/26",
                     "serviceEndpoints": [
                         {
@@ -219,14 +219,14 @@
         "spokeVnets": {
             "value": [
                 {
-                    "name": "vnet-ccs-prod-usva-mgmt",
-                    "subscriptionId": "aa2a513a-47e2-4a0d-8d39-0a3d5dd0f889",
+                    "name": "vnet-ccs-sand-usva-mgmt",
+                    "subscriptionId": "22ffc442-ad41-4a7e-b0f0-9c50f2476ec3",
                     "addressPrefixes": [
                         "10.30.8.0/21"
                     ],
                     "subnets": [
                         {
-                            "name": "snet-ccs-prod-usva-app",
+                            "name": "snet-ccs-sand-usva-app",
                             "addressPrefix": "10.30.8.0/24",
                             "serviceEndpoints": [
                                 {
@@ -249,7 +249,7 @@
                             "privateLinkServiceNetworkPolicies": "Enabled"
                         },
                         {
-                            "name": "snet-ccs-prod-usva-data",
+                            "name": "snet-ccs-sand-usva-data",
                             "addressPrefix": "10.30.9.0/24",
                             "serviceEndpoints": [
                                 {
@@ -272,7 +272,7 @@
                             "privateLinkServiceNetworkPolicies": "Enabled"
                         },
                         {
-                            "name": "snet-ccs-prod-usva-mgmt",
+                            "name": "snet-ccs-sand-usva-mgmt",
                             "addressPrefix": "10.30.10.0/24",
                             "serviceEndpoints": [
                                 {
@@ -295,7 +295,7 @@
                             "privateLinkServiceNetworkPolicies": "Enabled"
                         },
                         {
-                            "name": "snet-ccs-prod-usva-web",
+                            "name": "snet-ccs-sand-usva-web",
                             "addressPrefix": "10.30.11.0/24",
                             "serviceEndpoints": [
                                 {
@@ -320,7 +320,7 @@
                     ],
                     "virtualNetworkPeerings": [
                         {
-                            "remoteVirtualNetworkId": "/subscriptions/e6c61ac5-feea-4459-93fc-7131f8352553/resourceGroups/rg-ccs-prod-usva-vnet/providers/Microsoft.Network/virtualNetworks/vnet-ccs-prod-usva-conn",
+                            "remoteVirtualNetworkId": "/subscriptions/aa74db29-c2d4-4890-a064-e2c2af68a4fd/resourceGroups/rg-ccs-sand-usva-vnet/providers/Microsoft.Network/virtualNetworks/vnet-ccs-sand-usva-conn",
                             "allowForwardedTraffic": true,
                             "allowGatewayTransit": false,
                             "allowVirtualNetworkAccess": true,
@@ -332,24 +332,24 @@
                     ]
                 },
                 {
-                    "name": "vnet-ccs-prod-usva-iden",
-                    "subscriptionId": "3862f646-cc8b-4260-ba2b-24380c6979da",
+                    "name": "vnet-ccs-sand-usva-iden",
+                    "subscriptionId": "639c0c21-470c-4f39-9515-26121e9af53b",
                     "addressPrefixes": [
                         "10.20.11.0/24"
                     ],
                     "subnets": [
                         {
-                            "name": "snet-ccs-prod-usva-iden",
+                            "name": "snet-ccs-sand-usva-iden",
                             "addressPrefix": "10.20.11.0/26"
                         },
                         {
-                            "name": "snet-ccs-prod-usva-mgmt",
+                            "name": "snet-ccs-sand-usva-mgmt",
                             "addressPrefix": "10.20.11.64/26"
                         }
                     ],
                     "virtualNetworkPeerings": [
                         {
-                            "remoteVirtualNetworkId": "/subscriptions/e6c61ac5-feea-4459-93fc-7131f8352553/resourceGroups/rg-ccs-prod-usva-vnet/providers/Microsoft.Network/virtualNetworks/vnet-ccs-prod-usva-conn",
+                            "remoteVirtualNetworkId": "/subscriptions/aa74db29-c2d4-4890-a064-e2c2af68a4fd/resourceGroups/rg-ccs-sand-usva-vnet/providers/Microsoft.Network/virtualNetworks/vnet-ccs-sand-usva-conn",
                             "allowForwardedTraffic": true,
                             "allowGatewayTransit": false,
                             "allowVirtualNetworkAccess": true,
@@ -361,14 +361,14 @@
                     ]
                 },
                 {
-                    "name": "vnet-ccs-prod-usva-ssvc",
-                    "subscriptionId": "c295836f-4cd3-468a-b958-cf85ae7c6d23",
+                    "name": "vnet-ccs-sand-usva-ssvc",
+                    "subscriptionId": "09ec5522-1250-47da-b2ea-32a7501fe5a2",
                     "addressPrefixes": [
                         "10.30.16.0/21"
                     ],
                     "subnets": [
                         {
-                            "name": "snet-ccs-prod-usva-app",
+                            "name": "snet-ccs-sand-usva-app",
                             "addressPrefix": "10.30.16.0/24",
                             "serviceEndpoints": [
                                 {
@@ -382,7 +382,7 @@
                             "privateLinkServiceNetworkPolicies": "Enabled"
                         },
                         {
-                            "name": "snet-ccs-prod-usva-data",
+                            "name": "snet-ccs-sand-usva-data",
                             "addressPrefix": "10.30.17.0/24",
                             "serviceEndpoints": [
                                 {
@@ -396,7 +396,7 @@
                             "privateLinkServiceNetworkPolicies": "Enabled"
                         },
                         {
-                            "name": "snet-ccs-prod-usva-mgmt",
+                            "name": "snet-ccs-sand-usva-mgmt",
                             "addressPrefix": "10.30.18.0/24",
                             "serviceEndpoints": [
                                 {
@@ -410,7 +410,7 @@
                             "privateLinkServiceNetworkPolicies": "Enabled"
                         },
                         {
-                            "name": "snet-ccs-prod-usva-web",
+                            "name": "snet-ccs-sand-usva-web",
                             "addressPrefix": "10.30.19.0/24",
                             "serviceEndpoints": [
                                 {
@@ -426,7 +426,7 @@
                     ],
                     "virtualNetworkPeerings": [
                         {
-                            "remoteVirtualNetworkId": "/subscriptions/e6c61ac5-feea-4459-93fc-7131f8352553/resourceGroups/rg-ccs-prod-usva-vnet/providers/Microsoft.Network/virtualNetworks/vnet-ccs-prod-usva-conn",
+                            "remoteVirtualNetworkId": "/subscriptions/aa74db29-c2d4-4890-a064-e2c2af68a4fd/resourceGroups/rg-ccs-sand-usva-vnet/providers/Microsoft.Network/virtualNetworks/vnet-ccs-sand-usva-conn",
                             "allowForwardedTraffic": true,
                             "allowGatewayTransit": false,
                             "allowVirtualNetworkAccess": true,
@@ -458,11 +458,11 @@
         "firewallPolicyRuleCollectionGroups": {
             "value": [
                 {
-                    "name": "afwrcg-css-prod-usva-0001",
+                    "name": "afwrcg-ccs-sand-usva-0001",
                     "priority": 5000,
                     "ruleCollections": [
                         {
-                            "name": "afwrc-css-prod-usva-0001",
+                            "name": "afwrc-ccs-sand-usva-0001",
                             "priority": 5555,
                             "action": {
                                 "type": "Allow"
@@ -512,7 +512,7 @@
                             "ruleCollectionType": "FirewallPolicyFilterRuleCollection"
                         },
                         {
-                            "name": "afwrc-css-prod-usva-0002",
+                            "name": "afwrc-ccs-sand-usva-0002",
                             "priority": 6666,
                             "action": {
                                 "type": "Allow"
@@ -615,7 +615,7 @@
                 {
                     "roleDefinitionIdOrName": "Contributor",
                     "principalIds": [
-                        "40b2dd0e-b831-4f53-b691-540cacbdd281"
+                        "c5e59fa8-8f6a-43e3-8e3d-a4ee37ac0ce7"
                     ]
                 }
             ]
@@ -631,7 +631,7 @@
                 {
                     "roleDefinitionIdOrName": "Contributor",
                     "principalIds": [
-                        "22892111-6354-43e4-95d8-ce4e8741b018"
+                        "687f5f2a-a92b-48f8-bdf7-73dfd315c731"
                     ]
                 }
             ]
@@ -640,7 +640,7 @@
             "value": "ccs"
         },
         "opscope": {
-            "value": "prod"
+            "value": "sand"
         },
         "region": {
             "value": "usva"

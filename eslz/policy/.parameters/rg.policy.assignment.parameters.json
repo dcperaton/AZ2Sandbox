@@ -14,7 +14,7 @@
                             "value": "DeployIfNotExists"
                         },
                         "storageAccountResourceId": {
-                            "value": "/subscriptions/aa2a513a-47e2-4a0d-8d39-0a3d5dd0f889/resourceGroups/rg-ccs-prod-usva-siem/providers/Microsoft.Storage/storageAccounts/stccsprodusva3o3x"
+                            "value": "/subscriptions/22ffc442-ad41-4a7e-b0f0-9c50f2476ec3/resourceGroups/rg-ccs-sand-usva-siem/providers/Microsoft.Storage/storageAccounts/stccssand2875usvalogs"
                         }
                     },
                     "nonComplianceMessage": "NSG must be configured for Flow Logs and traffic analytics to a storageaccountid with a specfied retention period.",                    
@@ -28,7 +28,7 @@
                         "/providers/microsoft.authorization/roleDefinitions/749f88d5-cbae-40b8-bcfc-e573ddc772fa",
                         "/providers/microsoft.authorization/roleDefinitions/92aaf0da-9dab-42b6-94a3-d43ce8d16293"
                      ],
-                    "subscriptionId": "aa2a513a-47e2-4a0d-8d39-0a3d5dd0f889",
+                    "subscriptionId": "22ffc442-ad41-4a7e-b0f0-9c50f2476ec3",
                     "resourceGroupName": "rg-ccs-prod-usva-siem"
                 },
                 {
@@ -38,13 +38,13 @@
                     "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/03055927-78bd-4236-86c0-f36125a10dc9",
                     "parameters": {
                         "logAnalyticsWorkspaceIDForVMAgents": {
-                            "value": "/subscriptions/aa2a513a-47e2-4a0d-8d39-0a3d5dd0f889/resourcegroups/rg-ccs-prod-usva-siem/providers/microsoft.operationalinsights/workspaces/log-ccs-prod-usva-logs"
+                            "value": "/subscriptions/22ffc442-ad41-4a7e-b0f0-9c50f2476ec3/resourcegroups/rg-ccs-prod-usva-siem/providers/microsoft.operationalinsights/workspaces/log-ccs-prod-usva-logs"
                         },
                         "membersToExcludeInLocalAdministratorsGroup": {
-                            "value": "test@rajdisha.onmicrosoft.us"
+                            "value": "nileshpa@ccsaz2govsandbox.onmicrosoft.us"
                         },                            
                         "membersToIncludeInLocalAdministratorsGroup": {
-                            "value": "admin@rajdisha.onmicrosoft.us"
+                            "value": "ccsao-2875@ccsaz2govsandbox.onmicrosoft.us"
                         }
                     },
                     "nonComplianceMessage": "NIST SP 800-171 Rev. 2 must be enabled",                    
@@ -57,7 +57,7 @@
                     "roleDefinitionIds": [
                         "/providers/microsoft.authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c"
                      ],
-                    "subscriptionId": "aa2a513a-47e2-4a0d-8d39-0a3d5dd0f889",
+                    "subscriptionId": "22ffc442-ad41-4a7e-b0f0-9c50f2476ec3",
                     "resourceGroupName": "rg-ccs-prod-usva-siem"
                 }    
             ]      
